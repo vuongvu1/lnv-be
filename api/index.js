@@ -8,7 +8,7 @@ const port = 3001;
 const query =
   "Create a conversation between two random individuals in an unspecified location, discussing arbitrary topics with a late-night ambiance. Ensure the conversation can loop infinitely with a smooth transition from the end back to the start. Include their names and format it as follows: '{personOne: string, personTwo: string, conversation: [{person: string, content: string}]}'.";
 
-const storyOfTheDay = {};
+let storyOfTheDay = {};
 
 function getCurrentDate() {
   const today = new Date();
