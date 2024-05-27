@@ -14,9 +14,9 @@ async function askGPT(message) {
   return completion.choices[0].message.content;
 }
 
-app.get("/", async (req, res) => {
-  const { key } = req.query;
-  const reply = key ? await askGPT(key) : "No question asked.";
+app.get("/ask", async (req, res) => {
+  const { q: question } = req.query;
+  const reply = question ? await askGPT(question) : "No question asked.";
   res.send(reply);
 });
 
