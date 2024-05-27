@@ -9,6 +9,7 @@
   "author": "Hoang Vuong Vu",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "openai": "^4.47.1"
   }
 }

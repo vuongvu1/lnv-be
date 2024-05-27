@@ -1,6 +1,9 @@
 # Node.js
 node_modules/
 
+# Envs
+.env
+
 # IDEs and editors
 .vscode/
 
