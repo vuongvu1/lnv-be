@@ -37,6 +37,8 @@ app.get("/story", async (req, res) => {
   }
 
   const story = await askGPT(query);
+
+  storyOfTheDay = {}; // Clear the cache
   storyOfTheDay[today] = story;
 
   res.send(story);
